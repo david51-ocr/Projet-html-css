@@ -1,6 +1,7 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+   
 }
 
 /******** Header*******/
@@ -53,6 +54,58 @@ header {
     border-radius: 15px 0px 0px 15px;
 align-items: center;
     justify-content: center;
+}
+
+
+.search-barre {
+  width: 195px;
+  height: 49px;
+  border: none;
+}
+
+.search-result {
+  width: 132px;
+  height: 49px;
+  border: 1px;
+  background-color: var(--main-color);
+  color: white;
+  border-radius: 0px 15px 15px 0px;
+}
+
+.filtres {
+  display: flex;
+  width: 758px;
+  height: 50px;
+  gap: 15px;
+}
+
+.h2-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+button {
+  border-radius: 25px;
+  border: 2px;
+  background-color: #d9d9d9;
+}
+.fa-money-bill-wave{
+    width: 22px;
+    height: 22px;
+}
+.fa-person{
+    width: 22px;
+    height: 22px;
+}
+.fa-heart{
+    width: 22px;
+    height: 22px;
+}
+.fa-fire{
+    width: 22px;
+    height: 22px;
 }
 
 
