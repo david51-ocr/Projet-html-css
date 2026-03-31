@@ -90,25 +90,28 @@ button {
   border-radius: 25px;
   border: 2px;
   background-color: #d9d9d9;
+  font-size: 17px; 
+  font-weight: bold; 
+  display: flex; 
+  gap: 10px; 
+  align-items: center;
+  line-height: 1;
+  padding: 4px 19px 4px 19px;
+  height: 50px;
 }
-.fa-money-bill-wave{
+.fa-money-bill-wave, .fa-person, .fa-heart, .fa-fire{
+   display: flex;
+   align-items: center;
     width: 22px;
     height: 22px;
 }
-.fa-person{
-    width: 22px;
-    height: 22px;
-}
-.fa-heart{
-    width: 22px;
-    height: 22px;
-}
-.fa-fire{
-    width: 22px;
-    height: 22px;
+button:hover{
+background-color: #DEEBFF;
 }
 
-
+.pepites{
+    width: 167px;
+}
 .fa-solid {
     color: var(--main-color);
 }
