@@ -37,9 +37,15 @@ header {
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
 }
+
+h1{
+    margin-bottom: 8px;
+}
 .search {
   display: flex;
   align-items: center;
+  margin-top: 35px;
+  margin-bottom: 35px;
 }
 .icon i{
     color: black;
@@ -77,6 +83,7 @@ align-items: center;
   width: 758px;
   height: 50px;
   gap: 15px;
+  margin-bottom: 35px;
 }
 
 .h2-title {
@@ -92,10 +99,8 @@ button {
   background-color: #d9d9d9;
   font-size: 17px; 
   font-weight: bold; 
-  display: flex; 
-  gap: 10px; 
+  display: flex;  
   align-items: center;
-  line-height: 1;
   padding: 4px 19px 4px 19px;
   height: 50px;
 }
