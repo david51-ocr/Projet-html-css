@@ -302,6 +302,7 @@ a {
 .populaires-cards .card {
     display: flex;
     margin-top: 30px;
+    width: 100%;
 }
 
 .populaires-cards img {
@@ -333,8 +334,58 @@ a {
     margin-bottom: 5px;
 }
 
+/* Activités */
 
+.activites{
+    width: 100%;
+    padding: 30px;
+}
+ 
+.activites-title {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
 
+.activites-card {
+    display: flex;
+    gap: 30px;
+
+}
+.activites-card .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0;
+}
+.activites-card a{
+    width: calc((100% - 90px) / 4);
+}
+.activites-card img{
+width: 100%;
+height: 380px;
+border-radius: 20px 20px 0 0;
+}
+
+.activites-card .card-title{
+    padding: 10px;
+}
+
+/********Footer*******/
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #F2F2F2;
+    padding: 30px;
+}
+.nav-footer{
+    display: flex;
+    flex-direction: column
+}
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
