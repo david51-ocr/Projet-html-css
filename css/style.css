@@ -34,25 +34,24 @@ header {
     gap: 68px;
     align-items: center;
     height: 100%;
-    border-top: 3px solid transparent;
-
 }
 
 .nav-hebergements,
 .nav-activites {
     display: inline-block;
     padding: 16px 0px;
+    border-top: 3px solid transparent;
 }
 
 .nav-hebergements:hover {
     color: #0065FC;
-    border-top: 3px solid #0065FC;
+    border-top-color: #0065FC;
 
 }
 
 .nav-activites:hover {
     color: #0065FC;
-    border-top: 3px solid #0065FC;
+    border-top-color: #0065FC;
 
 }
 
@@ -67,7 +66,13 @@ h1 {
     margin-top: 35px;
     margin-bottom: 35px;
 }
+.search-barre::placeholder{
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    color: black;
 
+}
 .icon i {
     color: black;
     width: 14px;
@@ -107,7 +112,7 @@ h1 {
 /* filtres */
 .filtres {
     display: flex;
-    width: 758px;
+    width: auto;
     height: 50px;
     gap: 15px;
     margin-bottom: 35px;
@@ -349,6 +354,7 @@ a {
 .activites {
     width: 100%;
     padding: 30px;
+    box-sizing: border-box;
 }
 
 .activites-title {
@@ -386,7 +392,7 @@ a {
 /********Footer*******/
 footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     background-color: #F2F2F2;
     padding: 30px;
 }
@@ -395,6 +401,7 @@ footer {
     display: flex;
     flex-direction: column;
     text-align: left;
+    width: 33.33%;
 }
 
 .footer-content {
@@ -440,9 +447,13 @@ footer {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-
+    .main-container{
+        padding: 0;
+    }
     header {
         flex-direction: column;
+        align-items:normal;
+        height: auto;
     }
 
     .logo-booki {
@@ -453,22 +464,26 @@ footer {
     .link-hebergements {
         width: 100%;
         justify-content: center;
+        gap: 0;
+        padding: 0;
     }
     .nav-activites ,.nav-hebergements{
-        border-bottom: 2px solid #d9d9d9;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        border-top: none;
+        border-bottom: 2px solid transparent;
     }
-    h1{
-        margin-top: 67px;
-    }
+    
 
     .nav-activites:hover {
-        border-bottom: 3px solid #0065FC;
-        border-top: none;
+        border-bottom-color: #0065FC;
+        
     }
 
     .nav-hebergements:hover {
-        border-bottom: 3px solid #0065FC;
-        border-top: none;
+        border-bottom:2px solid #0065FC;
+        
     }
 
     .search-text {
@@ -482,4 +497,56 @@ footer {
     .search-result {
         border-radius: 15px;
     }
+    
+    .filtres{
+        height: auto;
+    }
+    .button-filtres{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+.hebergements-and-populaires{
+    flex-direction: column-reverse;
+}
+.populaires{
+    margin-bottom: 35px;
+}
+
+.populaires-cards{
+    flex-direction: column;
+}
+
+.populaires-cards a{
+    width: 100%;
+}
+
+.hebergements-and-populaires .hebergements{
+    background-color: white;
+}
+.hebergements-card{
+    display: flex;
+    flex-direction: column;
+}
+
+.hebergements-card a{
+    width: 100%;
+}
+
+.activites-card{
+    display: flex;
+    flex-direction: column;
+}
+
+.activites-card a {
+    width: 100%;
+}
+
+footer{
+    display: flex; 
+    flex-direction: column;
+}
+.nav-footer{
+    margin-bottom: 50px;
+}
 }
