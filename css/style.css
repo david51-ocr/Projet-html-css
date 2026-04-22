@@ -44,14 +44,14 @@ header {
 }
 
 .nav-hebergements:hover {
-    color: #0065FC;
-    border-top-color: #0065FC;
+    color:var(--main-color);
+    border-top-color:var(--main-color);
 
 }
 
 .nav-activites:hover {
-    color: #0065FC;
-    border-top-color: #0065FC;
+    color: var(--main-color);
+    border-top-color:var(--main-color);
 
 }
 
@@ -82,7 +82,7 @@ h1 {
 .icon {
     width: 50px;
     height: 49px;
-    background-color: #F2F2F2;
+    background-color: var(--main-bg-color);
     display: flex;
     border-radius: 15px 0px 0px 15px;
     align-items: center;
@@ -413,6 +413,11 @@ footer {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
+     .button-filtres{
+        display: flex;
+        flex-wrap: wrap;
+    }
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -485,7 +490,9 @@ footer {
         border-bottom:2px solid #0065FC;
         
     }
-
+    .search{
+        justify-content: center;
+    }
     .search-text {
         display: none;
     }
