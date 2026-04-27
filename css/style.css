@@ -113,7 +113,7 @@ h1 {
 .filtres {
     display: flex;
     width: auto;
-    height: 50px;
+    height: auto;
     gap: 15px;
     margin-bottom: 35px;
 }
@@ -414,6 +414,11 @@ footer {
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
 
+    .filtres{
+        display: flex;
+        flex-direction: column;
+    }
+
      .button-filtres{
         display: flex;
         flex-wrap: wrap;
@@ -512,6 +517,9 @@ footer {
         display: flex;
         flex-wrap: wrap;
     }
+    .button-filtres  {
+    width: calc((100% - 15px) / 2); 
+  }
 
 .hebergements-and-populaires{
     flex-direction: column-reverse;
